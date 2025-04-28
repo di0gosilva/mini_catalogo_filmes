@@ -1,4 +1,4 @@
-import React from 'react'
+const BASE_URL = 'https://api.themoviedb.org/3'
 
 export default function MovieDetails() {
   return (
