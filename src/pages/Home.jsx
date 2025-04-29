@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { API_KEY } from '../config/data'
+import { Link } from 'react-router-dom'
 
 const BASE_URL = 'https://api.themoviedb.org/3'
 
@@ -50,11 +51,13 @@ function PopularMovies() {
       <div className="flex flex-wrap justify-center gap-10">
         {movies.map(movie => (
           <div key={movie.id} className="w-58">
-            <img
-              src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : 'https://via.placeholder.com/200x300?text=Sem+Imagem'}
-              alt={movie.title}
-              className="w-full h-auto rounded-lg shadow-md hover:scale-105 transition-transform"
-            />
+            <Link to={`/movie/${movie.id}`}>
+              <img
+                src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : 'https://via.placeholder.com/200x300?text=Sem+Imagem'}
+                alt={movie.title}
+                className="w-full h-auto rounded-lg shadow-md hover:scale-105 transition-transform"
+              />
+            </Link>
             <h3 className="text-center text-lg font-semibold mt-3">{movie.title}</h3>
             <p className="text-center text-gray-500">{movie.release_date ? movie.release_date.split('-')[0] : 'Ano desconhecido'}</p>
           </div>
