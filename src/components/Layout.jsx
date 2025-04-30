@@ -13,7 +13,7 @@ export default function Layout() {
       </div>
 
       <footer className="text-sm bg-[#1E1E1E] py-3">
-        <div className='px-10 mx-auto w-full flex items-center justify-between '>
+        <div className='px-4 lg:px-10 mx-auto w-full flex items-center justify-between '>
           <p>Todos os direitos reservados.</p>
           <p>&copy; Diogo Silva 2025</p>
         </div>
