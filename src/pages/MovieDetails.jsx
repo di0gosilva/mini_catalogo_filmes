@@ -47,8 +47,9 @@ export default function MovieDetails() {
             className="rounded-lg shadow-md"
           />
           <div>
-            <p><strong>Data de lançamento:</strong> {movie.release_date}</p>
-            <p><strong>Nota:</strong> {movie.vote_average} / 10</p>
+            <p><strong>Gênero:</strong> {movie.genres.map(genre => genre.name).join(', ')} </p>
+            <p><strong>Nota:</strong> {movie.vote_average.toFixed(1)} / 10</p>
+            <p><strong>Data de lançamento:</strong> {new Date(movie.release_date).toLocaleDateString('pt-BR')}</p>
           </div>
           <p className="text-center">{movie.overview}</p>
         </div>

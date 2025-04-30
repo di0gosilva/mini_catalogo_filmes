@@ -8,8 +8,7 @@ export default function Header() {
       </Link>
 
       <nav className="flex gap-5">
-        <Link className='hover:text-[#00ADB5] transition duration-300' to="/">Home</Link>
-        <Link className='hover:text-[#00ADB5] transition duration-300' to="/movies">Filmes</Link>
+        <Link className='hover:text-[#00ADB5] transition duration-300' to="/favoritos">️️️ ❤️ Favoritos</Link>
       </nav>
     </header>
   )
