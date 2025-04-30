@@ -5,7 +5,9 @@ export default function MovieList({ movies}) {
   return (
     <div className="flex flex-wrap justify-center gap-10">
       {movies.map(movie => (
-        <MovieCard movie={movie} />
+        <MovieCard
+          movie={movie}
+        />
       ))}
     </div>
   )

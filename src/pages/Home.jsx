@@ -43,7 +43,6 @@ export default function Home() {
 
   return (
     <div className="max-w-6xl mx-auto flex flex-1 flex-col items-center justify-center gap-10 my-10">
-      <h1 className="text-4xl font-bold text-center">🎬 Catálogo de Filmes</h1>
 
       {loading && (
         <div className="text-4xl font-bold text-center">Carregando filmes...</div>
