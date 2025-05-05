@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
-import { API_KEY } from '../config/data'
 import MovieDetailsCard from "../components/MovieDetailsCard"
 
 const BASE_URL = 'https://api.themoviedb.org/3'
+const API_KEY = import.meta.env.VITE_API_KEY
 
 export default function MovieDetails() {
   const { id } = useParams()

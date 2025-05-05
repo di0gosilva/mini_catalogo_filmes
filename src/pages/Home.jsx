@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { API_KEY } from '../config/data'
 import MovieList from '../components/MovieList'
 import MoviePagination from '../components/MoviePagination'
 
 const BASE_URL = 'https://api.themoviedb.org/3'
+const API_KEY = import.meta.env.VITE_API_KEY
 
 export default function Home() {
   const [movies, setMovies] = useState([])

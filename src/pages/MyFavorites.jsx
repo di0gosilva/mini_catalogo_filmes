@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { API_KEY } from '../config/data'
 import FavoriteMovieCard from '../components/FavoriteMovieCard'
 import { Link } from 'react-router-dom'
 
 const BASE_URL = 'https://api.themoviedb.org/3'
+const API_KEY = import.meta.env.VITE_API_KEY
 
 export default function MyFavorites() {
   const [favoriteMovies, setFavoriteMovies] = useState([])
