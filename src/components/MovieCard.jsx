@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function MovieCard({ movie }) {
   return (
     <div key={movie.id} className="w-58">
-      <Link to={`/movie/${movie.id}`}>
+      <Link title="Ver detalhes" to={`/movie/${movie.id}`}>
         <img
           src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : 'https://via.placeholder.com/200x300?text=Sem+Imagem'}
           alt={movie.title}
